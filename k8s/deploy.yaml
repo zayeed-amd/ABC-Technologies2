@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: abctechnologies-app
+  name: abctechnologies-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: abctechnologies-app
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: abctechnologies-app
+    spec:
+      containers:
+      - image: zayeed91/tomcat-server-abc-technologies:1.0.0
+        name: tomcat-server-abc-technologies
+        resources: {}
+status: {}
