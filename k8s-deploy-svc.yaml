@@ -2,7 +2,7 @@
 - name: Run kubectl apply
   hosts: localhost
   gather_facts: false
-  become: true
+  become: false
 
   tasks:
     - name: Print Current Location
