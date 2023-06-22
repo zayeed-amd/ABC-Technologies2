@@ -33,7 +33,8 @@ def buildLocalJob(String jobName, def parameters) {
 
 
 pipeline {
-  agent {label 'Node-1'}
+  // agent {label 'Node-1'}
+  agent any
   
 
   stages {
